@@ -4,10 +4,12 @@
             <div class="card-body">
                 <div>
                     <div>
-                        <div style="display: block">
+                        <h4 class="card-title">{{ graficos.grafico1.leyenda }}</h4>
+                        <app-grafico-dona [doughnutChartLabels]="graficos.grafico1.labels" [doughnutChartData]="graficos.grafico1.data" [doughnutChartType]="graficos.grafico1.type"></app-grafico-dona>
+                        <!-- <div style="display: block">
                             <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType">
                             </canvas>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -19,14 +21,15 @@
             <div class="card-body">
                 <div>
                     <div>
-                        <div style="display: block">
+                        <h4 class="card-title">{{ graficos.grafico2.leyenda }}</h4>
+                        <app-grafico-dona [doughnutChartLabels]="graficos.grafico2.labels" [doughnutChartData]="graficos.grafico2.data" [doughnutChartType]="graficos.grafico2.type"></app-grafico-dona>
+                        <!-- <div style="display: block">
                             <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [chartType]="doughnutChartType">
                             </canvas>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
