@@ -19,7 +19,8 @@ import { LoginComponent } from './login/login.component';
 // import { PagesComponent } from './pages/pages.component';
 import { RegisterComponent } from './login/register.component';
 import { SharedModule } from './shared/shared.module';
-
+import { IncrementadorComponent } from './components/incrementador/incrementador.component';
+import { FormsModule } from '../../node_modules/@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,13 +34,15 @@ import { SharedModule } from './shared/shared.module';
     // BreadcrumbsComponent,
     // PagesComponent,
     RegisterComponent
+    // IncrementadorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     APP_ROUTES,
     PagesModules,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
