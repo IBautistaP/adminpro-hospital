@@ -9,7 +9,8 @@ import { ChartType } from '../../../../node_modules/@types/chart.js';
 export class GraficoDonaComponent implements OnInit {
   @Input() public doughnutChartLabels: Label[] = [];
   @Input() public doughnutChartData: MultiDataSet = [];
-  @Input() public doughnutChartType: ChartType = '';
+  // @Input() public doughnutChartType: ChartType = '';
+  @Input() public doughnutChartType: string = '';
 
   //  @Input() public doughnutChartLabels: Label[] = [
   //     'Download Sales',
